@@ -1,0 +1,12 @@
+<div class="registration-form">
+  <%= simple_form_for(@participant) do |f| %>
+    <%= f.input :prenom, placeholder:'par exemple: Alexandra' %>
+    <%= f.input :nom, placeholder: 'par exemple: Virnot' %>
+    <%= f.input :age, label: "Ton age, choisis entre 0-18+", collection: Participant::CHOIX_AGE%>
+    <%= f.input :tel, label: 'Ton numero de telephone', placeholder: 'par exemple: +31-654-02-66-70' %>
+    <%= f.input :participation, label: "Est-ce que tu vas venir?", collection: ['Oui', 'Non']%>
+    <div class="listed-events justify-content-center">
+      <%= f.button :submit, "S'enrigistrer", class:'btn button-form' %>
+    </div>
+  <% end %>
+</div>

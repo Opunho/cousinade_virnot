@@ -1,0 +1,66 @@
+.controller_participants{
+  background-color: #E9C46A;
+}
+
+.big-title-participation{
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 7rem
+}
+
+.info-card {
+  width: 13rem;
+  background-size: cover;
+  background-position: center;
+  height: 23rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: 0.2em;
+}
+
+.all-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.attendance-title{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.listed-attendees{
+  display: flex;
+  // margin-left: 3rem;
+  // margin-right: 3rem;
+  // margin-bottom: 3rem;
+  // justify-content: center;
+}
+
+.grid-attendees{
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media(max-width: 500px) {
+  .grid-attendees {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .grid-attendees {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,2 +1,35 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container col-12">
+
+
+  <div class="cousinade-background col-12">
+      <div class="cousinade-title">
+        <strong><h1 class="big-title">COUSINADE</h1></strong>
+        <h1 class="before-arrow-text">VIRNOT-THOMAS</h1>
+        <h3>Les Terrasses du Soleil</h3>
+        <h3>Drôme Provençale</h3>
+        <h3>26-29 Mai 2022</h3>
+        <h5 class="down-arrow"><i class="fa-solid fa-arrow-down"></i></h5>
+      </div>
+  </div>
+
+
+
+  <div class="all-cards row col-12">
+
+  <%# participer %>
+    <div class="info-card col-12 col-lg-3 btn" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.ophorus.com/UPLOADS/PRODUITS/281/ophorus-310768-media-principal-aix-en-provence-visit-cassis-village-wines-private-shore-excursion-from-marseille_large.jpeg)">
+      <%= link_to "Inscris-toi", new_participant_path %>
+    </div>
+
+    <div class="info-card col-12 col-lg-3 btn" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.sonomamag.com/wp-content/uploads/2020/06/BRCohn-7143-1-scaled.jpg)">
+      <%= link_to "Au Programme", programme_path %>
+
+    </div>
+
+    <div class="info-card col-12 col-lg-3 btn" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1527684651001-731c474bbb5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)">
+      <%= link_to "Infos Pratiques", addresses_path %>
+    </div>
+
+  </div>
+
+</div>

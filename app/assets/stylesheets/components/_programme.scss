@@ -1,0 +1,42 @@
+.listed-events{
+  display: flex;
+}
+
+.grid-events{
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media(max-width: 500px) {
+  .grid-events {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .grid-events {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-events{
+  padding-right: 2rem;
+  padding-left:2rem;
+}
+
+.jeudi{
+  padding-top:2rem;
+}
+
+// .vendredi{
+//   background-color: #AE2012;
+// }
+
+// .samedi{
+//  background-color: #CA6702;
+// }
+
+// .dimanche{
+//   background-color: #005F73;
+// }

@@ -1,0 +1,27 @@
+<body class="controller_participants">
+
+<div class="participant-title col-12" style="background-image: url(https://www.ophorus.com/UPLOADS/PRODUITS/281/ophorus-310768-media-principal-aix-en-provence-visit-cassis-village-wines-private-shore-excursion-from-marseille_large.jpeg)">
+    <div class='home-link'>
+      <%= link_to root_path do %>
+        <h5><i class="fa-solid fa-angle-left"></i> <i class="fa-solid fa-house"></i></h5>
+      <% end %>
+    </div>
+    <h1 class="big-title-participation">Inscris-toi</h1>
+    <h5 class="down-arrow"><i class="fa-solid fa-arrow-down"></i></h5>
+</div>
+
+<%= render "shared/form" %>
+
+<h3 class='attendance-title listed-events justify-content-center'>
+  Déjà Inscrit
+</h3>
+
+<div class="listed-attendees">
+  <ul class="grid-attendees">
+    <% @attendees.each do |attendee| %>
+        <p>
+          <i class="fa-solid fa-check"></i> <%= attendee.prenom %> <%= attendee.nom %>
+        </p>
+    <% end %>
+  </ul>
+</div>
